@@ -1,0 +1,19 @@
+<circuit version="1.0.0-SR1" rev="1402" stepSize="1000000000" stepsPS="2" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="Subcircuit" CircId="Uno-1" mainComp="false" Show_id="true" Show_Val="false" Pos="576,400" rotation="0" hflip="1" vflip="1" label="Uno-1" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Logic_Symbol="false">
+<mainCompProps itemtype="MCU" CircId="1_mega328-109" mainComp="true" Show_id="false" Show_Val="false" Pos="20,20" rotation="0" hflip="1" vflip="1" label="1_mega328-109" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="16 MHz" Program="../Desktop/leddd/build/arduino.avr.uno/leddd.ino.hex" Auto_Load="false" Rst_enabled="true" Ext_Osc="true" Wdt_enabled="false" />
+</item>
+
+<item itemtype="Switch" CircId="Switch-7" mainComp="false" Show_id="false" Show_Val="false" Pos="556,516" rotation="90" hflip="1" vflip="1" label="Switch-7" idLabPos="-12,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" DT="false" Poles="1 _Polos" />
+
+<item itemtype="Led" CircId="Led-22" mainComp="false" Show_id="false" Show_Val="false" Pos="532,544" rotation="0" hflip="1" vflip="1" label="Led-22" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Yellow" Grounded="false" Threshold="2.4 V" MaxCurrent="0.03 A" Resistance="0.6 Ω" />
+
+<item itemtype="Connector" uid="Connector-23" startpinid="Led-22-rPin" endpinid="Uno-1-GND2" pointList="548,544,584,544,584,536" />
+
+<item itemtype="Connector" uid="Connector-25" startpinid="Switch-7-pinP0" endpinid="Uno-1-10" pointList="556,500,584,500,584,504" />
+
+<item itemtype="Connector" uid="Connector-26" startpinid="Led-22-lPin" endpinid="Uno-1-8" pointList="516,544,516,488,584,488" />
+
+<item itemtype="Connector" uid="Connector-27" startpinid="Switch-7-switch0pinN" endpinid="Uno-1-13" pointList="556,532,584,532,584,528" />
+
+</circuit>
